@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BD9EF4D23155AC30075101E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9EF4C23155AC30075101E /* Data.swift */; };
+		0BD9EF4F23155BE60075101E /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9EF4E23155BE60075101E /* SectionCollectionViewCell.swift */; };
 		4CA538EC2313CCDA007C11C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA538EB2313CCDA007C11C2 /* AppDelegate.swift */; };
 		4CA538EE2313CCDA007C11C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA538ED2313CCDA007C11C2 /* ViewController.swift */; };
 		4CA538F12313CCDA007C11C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA538EF2313CCDA007C11C2 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BD9EF4C23155AC30075101E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		0BD9EF4E23155BE60075101E /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		4CA538E82313CCDA007C11C2 /* DesignCodeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA538EB2313CCDA007C11C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CA538ED2313CCDA007C11C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 				4CA538EB2313CCDA007C11C2 /* AppDelegate.swift */,
 				4CA538ED2313CCDA007C11C2 /* ViewController.swift */,
 				4CA5391B2315114B007C11C2 /* SectionViewController.swift */,
+				0BD9EF4E23155BE60075101E /* SectionCollectionViewCell.swift */,
+				0BD9EF4C23155AC30075101E /* Data.swift */,
 				4CA538EF2313CCDA007C11C2 /* Main.storyboard */,
 				4CA538F22313CCDB007C11C2 /* Assets.xcassets */,
 				4CA538F42313CCDB007C11C2 /* LaunchScreen.storyboard */,
@@ -141,8 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CA5391C2315114B007C11C2 /* SectionViewController.swift in Sources */,
+				0BD9EF4F23155BE60075101E /* SectionCollectionViewCell.swift in Sources */,
 				4CA538EE2313CCDA007C11C2 /* ViewController.swift in Sources */,
 				4CA538EC2313CCDA007C11C2 /* AppDelegate.swift in Sources */,
+				0BD9EF4D23155AC30075101E /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
