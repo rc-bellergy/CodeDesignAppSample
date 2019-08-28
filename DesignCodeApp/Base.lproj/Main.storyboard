@@ -411,17 +411,29 @@
                                         </constraints>
                                         <viewLayoutGuide key="safeArea" id="PGG-oo-HWh"/>
                                     </view>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GgF-wc-2qo">
+                                        <rect key="frame" x="0.0" y="1174" width="375" height="524"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="524" id="1H7-wA-jcD"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="ER8-Qa-eOi" kind="embed" id="hfX-4t-URP"/>
+                                        </connections>
+                                    </containerView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="pqL-ug-PdE" secondAttribute="trailing" id="1oB-QM-lq4"/>
                                     <constraint firstItem="j8Y-JK-4JY" firstAttribute="leading" secondItem="d7I-ys-JQj" secondAttribute="leading" id="3e8-Fo-yJh"/>
+                                    <constraint firstItem="GgF-wc-2qo" firstAttribute="leading" secondItem="d7I-ys-JQj" secondAttribute="leading" id="6JQ-Ld-NRg"/>
                                     <constraint firstAttribute="bottom" secondItem="j8Y-JK-4JY" secondAttribute="bottom" constant="820" id="7Cd-iE-toK"/>
                                     <constraint firstAttribute="trailing" secondItem="jtM-2S-Hjj" secondAttribute="trailing" id="95V-B6-HeB"/>
+                                    <constraint firstAttribute="trailing" secondItem="GgF-wc-2qo" secondAttribute="trailing" id="EQy-Y8-eTw"/>
                                     <constraint firstItem="j8Y-JK-4JY" firstAttribute="top" secondItem="pqL-ug-PdE" secondAttribute="bottom" id="JYi-c9-KAR"/>
                                     <constraint firstItem="jtM-2S-Hjj" firstAttribute="centerX" secondItem="d7I-ys-JQj" secondAttribute="centerX" id="L9a-qt-8ro"/>
                                     <constraint firstItem="jtM-2S-Hjj" firstAttribute="leading" secondItem="pqL-ug-PdE" secondAttribute="leading" id="VZR-5B-Xhd"/>
                                     <constraint firstAttribute="trailing" secondItem="j8Y-JK-4JY" secondAttribute="trailing" id="XB3-bd-bvC"/>
                                     <constraint firstItem="jtM-2S-Hjj" firstAttribute="leading" secondItem="d7I-ys-JQj" secondAttribute="leading" id="api-gm-3cL"/>
+                                    <constraint firstItem="GgF-wc-2qo" firstAttribute="top" secondItem="j8Y-JK-4JY" secondAttribute="bottom" id="bEk-Xj-A8h"/>
                                     <constraint firstItem="jtM-2S-Hjj" firstAttribute="top" secondItem="d7I-ys-JQj" secondAttribute="top" id="hXg-Rb-BI5"/>
                                     <constraint firstItem="pqL-ug-PdE" firstAttribute="top" secondItem="d7I-ys-JQj" secondAttribute="top" constant="451" id="p67-ye-l4I"/>
                                 </constraints>
@@ -451,6 +463,90 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="135.96059113300493"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JDQ-b6-skV">
+            <objects>
+                <viewController id="ER8-Qa-eOi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mcp-Aj-tso">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="524"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oye-Lf-3xb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="524"/>
+                                <subviews>
+                                    <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ILQ-pF-tgg">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="235"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="235" id="MVI-RI-gjI"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="20" id="RUZ-Pb-Wao">
+                                            <size key="itemSize" width="304" height="235"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="testimonialCell" id="WMq-6s-Ty9">
+                                                <rect key="frame" x="20" y="0.0" width="304" height="235"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="304" height="235"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwn-yY-rTe">
+                                                            <rect key="frame" x="62" y="48" width="214" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </view>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="Dwn-yY-rTe" firstAttribute="leading" secondItem="WMq-6s-Ty9" secondAttribute="leadingMargin" constant="54" id="MIE-Eh-sgR"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="Dwn-yY-rTe" secondAttribute="trailing" constant="20" id="avx-bf-5J6"/>
+                                                    <constraint firstItem="Dwn-yY-rTe" firstAttribute="top" secondItem="WMq-6s-Ty9" secondAttribute="topMargin" constant="20" id="ibs-8s-2Rx"/>
+                                                </constraints>
+                                                <size key="customSize" width="304" height="235"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                        <real key="value" value="0.25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                        <size key="value" width="0.0" height="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.19607843137254902" green="0.2196078431372549" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ILQ-pF-tgg" firstAttribute="leading" secondItem="Oye-Lf-3xb" secondAttribute="leading" id="RPb-d1-Lxc"/>
+                                    <constraint firstAttribute="trailing" secondItem="ILQ-pF-tgg" secondAttribute="trailing" id="u4d-92-4L3"/>
+                                    <constraint firstItem="ILQ-pF-tgg" firstAttribute="top" secondItem="Oye-Lf-3xb" secondAttribute="top" constant="50" id="zL0-as-dJC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Oye-Lf-3xb" firstAttribute="leading" secondItem="mcp-Aj-tso" secondAttribute="leading" id="IFJ-GK-3hv"/>
+                            <constraint firstAttribute="bottom" secondItem="Oye-Lf-3xb" secondAttribute="bottom" id="aXD-Rv-R8y"/>
+                            <constraint firstAttribute="trailing" secondItem="Oye-Lf-3xb" secondAttribute="trailing" id="gjM-WJ-PgO"/>
+                            <constraint firstItem="Oye-Lf-3xb" firstAttribute="top" secondItem="mcp-Aj-tso" secondAttribute="top" id="gtm-W2-iG1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vX2-5q-3fq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
