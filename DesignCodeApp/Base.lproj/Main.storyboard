@@ -25,9 +25,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Home" translatesAutoresizingMaskIntoConstraints="NO" id="ej7-Mm-IeW">
-                                                <rect key="frame" x="0.0" y="-50" width="375" height="452"/>
+                                                <rect key="frame" x="0.0" y="-50" width="375" height="500"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="452" id="8jF-kU-YGS"/>
+                                                    <constraint firstAttribute="height" constant="500" id="8jF-kU-YGS"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Art-iPhoneX" translatesAutoresizingMaskIntoConstraints="NO" id="Sct-vN-ZXj">
@@ -390,8 +390,8 @@
                                                         <size key="customSize" width="304" height="248"/>
                                                         <connections>
                                                             <outlet property="captionLabel" destination="RS1-7g-eJm" id="JMg-tL-llt"/>
-                                                            <outlet property="coverImageView" destination="jO4-Zb-W2a" id="7JE-0a-YGL"/>
-                                                            <outlet property="titleLabel" destination="Ung-4W-Uqp" id="cRu-qH-cBg"/>
+                                                            <outlet property="coverImageView" destination="auT-t3-FTo" id="A4j-Ne-QYv"/>
+                                                            <outlet property="titleLabel" destination="jO4-Zb-W2a" id="goM-FF-t3L"/>
                                                         </connections>
                                                     </collectionViewCell>
                                                 </cells>
