@@ -301,11 +301,11 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="248" id="vgW-CA-4pV"/>
                                                 </constraints>
-                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="Fga-bf-6Lc">
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Fga-bf-6Lc">
                                                     <size key="itemSize" width="304" height="248"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionCell" id="bTv-cl-Yvv" customClass="SectionCollectionViewCell" customModule="DesignCodeApp" customModuleProvider="target">
@@ -321,8 +321,11 @@
                                                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNh-wg-Qn1">
                                                                             <rect key="frame" x="0.0" y="0.0" width="304" height="248"/>
                                                                             <subviews>
-                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ios11" translatesAutoresizingMaskIntoConstraints="NO" id="auT-t3-FTo">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="304" height="248"/>
+                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ios11" translatesAutoresizingMaskIntoConstraints="NO" id="auT-t3-FTo">
+                                                                                    <rect key="frame" x="-1288" y="0.0" width="2880" height="248"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="248" id="Jqq-dE-gcv"/>
+                                                                                    </constraints>
                                                                                 </imageView>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn iOS 11 Design" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jO4-Zb-W2a">
                                                                                     <rect key="frame" x="20" y="20" width="264" height="76.5"/>
@@ -341,14 +344,13 @@
                                                                             <constraints>
                                                                                 <constraint firstAttribute="bottom" secondItem="auT-t3-FTo" secondAttribute="bottom" id="E9c-f5-pNE"/>
                                                                                 <constraint firstAttribute="trailing" secondItem="RS1-7g-eJm" secondAttribute="trailing" constant="20" id="FhV-mg-dcK"/>
-                                                                                <constraint firstItem="auT-t3-FTo" firstAttribute="leading" secondItem="bNh-wg-Qn1" secondAttribute="leading" id="Ju1-Dt-mNA"/>
                                                                                 <constraint firstItem="jO4-Zb-W2a" firstAttribute="leading" secondItem="bNh-wg-Qn1" secondAttribute="leading" constant="20" id="LS0-yF-v6S"/>
                                                                                 <constraint firstAttribute="trailing" secondItem="jO4-Zb-W2a" secondAttribute="trailing" constant="20" id="TE8-xp-IJI"/>
                                                                                 <constraint firstItem="RS1-7g-eJm" firstAttribute="leading" secondItem="bNh-wg-Qn1" secondAttribute="leading" constant="20" id="gtl-PD-mki"/>
                                                                                 <constraint firstAttribute="bottom" secondItem="RS1-7g-eJm" secondAttribute="bottom" constant="20" id="hqa-gG-NVK"/>
                                                                                 <constraint firstItem="auT-t3-FTo" firstAttribute="top" secondItem="bNh-wg-Qn1" secondAttribute="top" id="nwS-eW-Zpk"/>
+                                                                                <constraint firstItem="auT-t3-FTo" firstAttribute="centerX" secondItem="bNh-wg-Qn1" secondAttribute="centerX" id="oUt-9f-CGY"/>
                                                                                 <constraint firstItem="jO4-Zb-W2a" firstAttribute="top" secondItem="bNh-wg-Qn1" secondAttribute="top" constant="20" id="qO5-EL-9GQ"/>
-                                                                                <constraint firstAttribute="trailing" secondItem="auT-t3-FTo" secondAttribute="trailing" id="zsB-rU-UaI"/>
                                                                             </constraints>
                                                                             <userDefinedRuntimeAttributes>
                                                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
